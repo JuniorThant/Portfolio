@@ -1,0 +1,324 @@
+
+/*-------------------------------------------For the whole body-------------------------------------------------------*/
+
+:root{
+	--firstcolor:#4568DC;
+	--secondcolor:#B06AB3;
+
+}
+
+*{
+	font-family: 'Lora', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif;
+font-family: 'Roboto', sans-serif;
+}
+
+body{
+	background: linear-gradient(to left, var(--firstcolor), var(--secondcolor));
+    overflow-x: hidden;
+    background-repeat:  no-repeat;  
+
+}
+
+.heading-line{
+
+    width: 105px;
+    height: 4px;
+    background-color: #ffff00;
+    margin: 30px auto;
+}
+
+.mainheading{
+
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+}
+
+/*-------------------------------------------Navigation Bar-------------------------------------------------------*/
+
+nav{
+	background: linear-gradient(to left, var(--firstcolor), var(--secondcolor));
+}
+
+nav img{
+width: 70px;
+height: 70px;
+object-fit: cover;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Initial shadow */
+    }
+    60% {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4); /* Increased shadow as image moves up */
+    }
+    100% {
+        transform: translateY(0);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Return to the initial shadow */
+    }
+}
+
+.bouncea {
+    animation: bounce 1s ease-in 1s infinite normal none;
+}
+
+/*-------------------------------------------Header-------------------------------------------------------*/
+
+header img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    z-index: -1;
+
+}
+
+header .overlay{
+    width: 100%;
+    height: 750px;
+    object-fit: cover;
+ 
+}
+
+.gradientanimate h2{
+    background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+.movingtext h3{
+
+    animation: movetext 5s linear 0s infinite normal none;
+}
+
+@keyframes movetext {
+    0% {
+        transform: translateX(0%); 
+    }
+    20%{
+        transform: translateX(50%);
+    }
+    30%{
+        transform: translateX(50%);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    70%{
+        transform: translateX(50%);
+    }
+    80%{
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/*-------------------------------------------Qualification-------------------------------------------------------*/
+
+#qualification img{
+
+        width: 100%;
+        height: 300px;
+        object-fit: cover; 
+}
+
+#qualification .card-body{
+
+    height: 150px;
+}
+
+#qualification .card{
+    width:  100%;
+}
+
+.carousel-control-prev{
+    position: absolute;
+    left: -1%;
+}
+.carousel-control-prev-icon{
+    width: 40px;
+    height: 40px;
+    background-color:orange;
+}
+
+.carousel-control-next{
+    position: absolute;
+    right: -1%;
+}
+
+.carousel-control-next-icon{
+    width: 40px;
+    height: 40px;
+     background-color:orange;
+}
+
+.lol{
+    width: 300px;
+    height: 300px;
+    border: 20px solid red;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: relative;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.circlelol{
+    position: absolute;
+    overflow: hidden;
+     top: 100px;
+    left: 90px;
+    -webkit-animation:circle 5s linear infinite;
+}
+
+.circlehtml{
+    position: absolute;
+    overflow: hidden;
+       top: 100px;
+    left: 90px;
+    -webkit-animation:circlehtml 5s linear infinite;
+
+}
+.circlecss{
+    position: absolute;
+    overflow: hidden;
+       top: 100px;
+    left: 90px;
+    -webkit-animation:circlecss 5s linear infinite;
+
+}
+
+.circlebs{
+    position: absolute;
+    overflow: hidden;
+       top: 100px;
+    left: 90px;
+    -webkit-animation:circlebs 5s linear infinite;
+
+}
+
+@-webkit-keyframes circle{
+    0%{
+        transform: rotate(0deg)translate(-145px)rotate(0deg);
+    }
+      100%{
+        transform: rotate(360deg)translate(-145px)rotate(-360deg);
+    }
+}
+@-webkit-keyframes circlehtml{
+    0%{
+        transform: rotate(0deg)translate(145px)rotate(0deg);
+    }
+     100%{
+        transform: rotate(360deg)translate(145px)rotate(-360deg);
+    }
+   
+}
+@-webkit-keyframes circlecss{
+    0%{
+        transform: rotate(-90deg)translate(145px)rotate(90deg);
+    }
+      100%{
+        transform: rotate(270deg)translate(145px)rotate(-270deg);
+    }  
+}
+@-webkit-keyframes circlebs{
+    0%{
+        transform: rotate(-90deg)translate(-145px)rotate(90deg);
+    }
+      100%{
+        transform: rotate(270deg)translate(-145px)rotate(-270deg);
+    }  
+}
+
+.lol img{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    color:transparent;
+}
+
+.expline{
+    width: 2px;
+    height: 95%;
+    background-color: green;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.expcircle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    overflow:hidden;
+    top: 5px;
+    left: 4px;
+ 
+}
+#experience .card{
+    height: 100%;
+}
+
+.uparrow{
+	display: block;
+	width: 40px;
+	height: 50px;
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	color: white;
+	background-color: orange;
+	border-radius: 5%;
+	font-size: 2rem;
+}
+
+.animatedtextleftright {
+    position: absolute;
+    animation: leftright 10s linear infinite;
+    white-space: nowrap;
+    opacity: 0;
+}
+
+@keyframes leftright {
+    0% {
+        left: -100%;
+        opacity: 1;
+    }
+    100% {
+        left: 100%;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
